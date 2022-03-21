@@ -3,7 +3,6 @@ public class Main {
     {
         WordRunner game = new WordRunner();
         game.Introduction();
-        Word word = new Word();
-        word.printWord();
+        game.game();
     }
 }
