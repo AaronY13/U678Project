@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Word {
@@ -11,7 +12,7 @@ public class Word {
     {
         wordleWords = new ArrayList<String>();
         loadWordsInto(wordleWords);
-        gameWord = wordleWords.get((int) (Math.random() * wordleWords.size()));
+        gameWord = wordleWords.get((int) (Math.random() * wordleWords.size())).toLowerCase();
     }
 
     public static void loadWordsInto(ArrayList<String> wordList) {

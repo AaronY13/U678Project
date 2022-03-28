@@ -1,5 +1,6 @@
 public class LetterGrid {
     private String[][] grid;
+    private final String WHITE = "\u001B[37m";
 
     public LetterGrid()
     {
@@ -10,16 +11,16 @@ public class LetterGrid {
     {
         for (String[] row : grid)
         {
-            System.out.print("|");
+            System.out.print(WHITE + "|");
             for (String col : row)
             {
                 if (col == null)
                 {
-                    System.out.print(" |");
+                    System.out.print(WHITE + " |" + WHITE);
                 }
                 else
                 {
-                    System.out.print(col + "|");
+                    System.out.print(col + "|" + WHITE);
                 }
             }
             System.out.println();
